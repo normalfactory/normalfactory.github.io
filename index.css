@@ -1,5 +1,24 @@
 h1 
 {
-    font: 80% georgia, sans-serif;
-    color: dimgray
+    /* font: 80% georgia, sans-serif;
+    color: dimgray */
 }
+
+
+.centerthumbnails {
+    text-align:center;
+    word-break:break-all;
+    background-color: rgb(205, 235, 37);
+}
+
+
+body {
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+  }
+  
+footer {
+    position: absolute;
+    bottom: 0;
+  }
