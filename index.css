@@ -11,6 +11,7 @@
 }
 
 
+/* Settings for the display of the footer */
 body {
     min-height: 100%;
     position: relative;
@@ -25,14 +26,27 @@ footer {
   }
 
 
+  /* Set default color for navbar; changed with media query */
 .navbar {
     background: gray;
 }
 
 
+/* media query based on size; change images sizes and color of 
+navbar */
+@media (min-width:1201px) {
+    .comparisonimage {
+        width: 500;
+    }
+}
+
 @media (max-width: 1200px) {
     .visimage {
         width: 500;
+    }
+
+    .comparisonimage {
+        width: 380;
     }
 }
 
@@ -44,11 +58,18 @@ footer {
     .visimage {
         width: 450;
     }
+
+    .comparisonimage {
+        width: 330;
+    }
 }
 
 @media (max-width: 768px) {
     .visimage {
         width: 400;
+    }
+    .comparisonimage {
+        width: 330;
     }
 }
 
@@ -56,11 +77,16 @@ footer {
     .visimage {
         width: 350;
     }
+    .comparisonimage {
+        width: 330;
+    }
 }
 
 
+/* Set border for the image of the current page */
 .selectedimage {
     border-style: solid;
     border-width: 4px;
     border-color: #1F9BCF;
 }
+
