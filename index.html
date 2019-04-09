@@ -6,19 +6,24 @@
 
     <title>Web Visualization Dashboard</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS: Use lux theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
 
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top test"></nav> -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
 
-        <a class="navbar-brand" href="index.html">Latitude</a>
+        <!-- Brand -->
+        <a class="navbar-brand bg-info" href="index.html">Latitude</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -53,34 +58,39 @@
 
 
             <!-- Column: Summary-->
-            <div class="col-12 col-md-8 bg-warning">
+            <div class="col-12 col-md-8 bg-light">
                 
-                <h1>Summary: Latitude vs. X</h1>
-                <hr>
-                <img class="float-left mr-4 rounded" width="250px" src="resources/latitudeandmaxtemperature.png" alt="Latitude and Temperature"> 
-                <p>
-                    The purpose of this project was to analyze how weather changes as you get closer to the equator.
-                    To accomplish this analyais, we first pulled data from the OpenWeatherMap API to assemble a 
-                    dataset on over 500 cities</p>
-                <p>
-                    After assembling the dataset, we used Maplotlib to plot various aspects of the weather vs.
-                    latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity.
-                    This site provides the source data and visualizations created as part of the analysis, as well 
-                    as explanations and descriptions of any trends and correlations witnessed.
-                </p>
+                <div class="m-2">
+                    <h1>Summary: Latitude vs. X</h1>
+                    <hr>
+                    <img class="float-left mr-4 rounded" width="250px" src="resources/latitudeandmaxtemperature.png" alt="Latitude and Temperature"> 
+                    <p>
+                        The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                        To accomplish this analyais, we first pulled data from the OpenWeatherMap API to assemble a 
+                        dataset on over 500 cities</p>
+                    <p>
+                        After assembling the dataset, we used Maplotlib to plot various aspects of the weather vs.
+                        latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity.
+                        This site provides the source data and visualizations created as part of the analysis, as well 
+                        as explanations and descriptions of any trends and correlations witnessed.
+                    </p>
+                </div>
+                
             </div>
 
 
             <!-- Column: Visualizations-->
-            <div class="col-12 col-md-4 bg-primary">
+            <div class="col-12 col-md-4 bg-light">
                 
-                    <h3>Visualizations</h3>
+                <div class="m-2">
+                    <h4>Visualizations</h4>
                     <hr>
                     <div class="centerthumbnails">
                         <a href="vis-maxtemperature.html">
                             <img class="m-1 rounded" width="120px" src="resources/latitudeandmaxtemperature.png" 
                             alt="Latitude and Temperature">
                         </a>
+
                         <a href="vis-humidity.html">
                             <img class="m-1 rounded" width="120px" src="resources/latitudeandhumidity.png" 
                             alt="Latitude and Humidity">
@@ -94,15 +104,18 @@
                             alt= "Latitude and Windspeed">
                         </a>
                     </div>
+                </div>
+                    
             </div>
         </div>
     </div>
 
+    
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <span class="text-muted text-center">Web Visualization Dashboard - <em><small>Scott McEachern</small></em></span>
+            <span class="text-muted text-center"><h6>Web Visualization Dashboard</h6></span>
         </div>
     </footer>
 

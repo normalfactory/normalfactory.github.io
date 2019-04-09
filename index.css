@@ -5,10 +5,14 @@ h1
 }
 
 
+.navbar-brand {
+    padding:10px;
+}
+
+
 .centerthumbnails {
     text-align:center;
     word-break:break-all;
-    background-color: rgb(205, 235, 37);
 }
 
 
@@ -16,9 +20,30 @@ body {
     min-height: 100%;
     position: relative;
     margin: 0;
+    background-color: rgb(241, 241, 241);
   }
   
 footer {
     position: absolute;
     bottom: 0;
+    min-width: 100%;
   }
+
+
+.navbar {
+    background: gray;
+}
+
+
+@media (max-width: 992px) {
+    .navbar {
+        background: #1F9BCF;
+    }
+}
+
+
+.test {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1F9BCF;
+}
