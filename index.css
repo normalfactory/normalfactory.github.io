@@ -1,8 +1,3 @@
-h1 
-{
-    /* font: 80% georgia, sans-serif;
-    color: dimgray */
-}
 
 
 .navbar-brand {
@@ -35,15 +30,37 @@ footer {
 }
 
 
+@media (max-width: 1200px) {
+    .visimage {
+        width: 500;
+    }
+}
+
 @media (max-width: 992px) {
     .navbar {
         background: #1F9BCF;
     }
+
+    .visimage {
+        width: 450;
+    }
+}
+
+@media (max-width: 768px) {
+    .visimage {
+        width: 400;
+    }
+}
+
+@media (max-width: 576px) {
+    .visimage {
+        width: 350;
+    }
 }
 
 
-.test {
+.selectedimage {
     border-style: solid;
-    border-width: 1px;
+    border-width: 4px;
     border-color: #1F9BCF;
 }

@@ -9,43 +9,50 @@
     <!-- Bootstrap CSS: Use lux theme -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
 
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
 
-        <a class="navbar-brand" href="index.html">Lattitude</a>
+        <!-- Brand -->
+        <a class="navbar-brand bg-info" href="index.html">Latitude</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div id="navbarNavDropdown" class="navbar-collapse collapse">
-            <ul class="navbar-nav mr-auto">
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Plots
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="vis-maxtemperature.html">Max Temperature</a>
-                        <a class="dropdown-item" href="vis-humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="vis-cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="vis-windspeed.html">Wind Speed</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="data.html">Data  <span class="sr-only">(current)</span> </a>
-                </li>
-            </ul>
-        </div>
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="vis-maxtemperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="vis-humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="vis-cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="vis-windspeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span> </a>
+                    </li>
+                </ul>
+            </div>
     </nav>
 
+    
+    <!-- Weather Data -->
     <div class="container mt-5">
         <h1>Data</h1>
         <hr>
@@ -9008,7 +9015,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <span class="text-muted text-center"><h6>Web Visualization Dashboard</h6></span>
+            <span class="text-muted text-center"><h6><small>Web Visualization Dashboard</small></h6></span>
         </div>
     </footer>
 
